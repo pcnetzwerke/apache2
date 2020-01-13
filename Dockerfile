@@ -15,10 +15,7 @@ RUN apt-get update \
 
 RUN lsb_release -a
 
-ENV APACHE_RUN_USER www-data
-ENV APACHE_RUN_GROUP www-data
-
-#COPY content.html /var/www/html/
+COPY content.html /var/www/html/
 
 EXPOSE 80
 
