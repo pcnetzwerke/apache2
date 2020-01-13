@@ -2,7 +2,7 @@
 Docker image for apache2
 
 This container will deploy an apache2 web server.
-Navigate to http://localhost/content.html
+Navigate to http://localhost:8888/content.html
 
 **USAGE:**
 
