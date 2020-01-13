@@ -4,7 +4,7 @@ Docker image for apache2
 This container will deploy an apache2 web server.
 Navigate to http://localhost/content.html
 
-USAGE:
+**USAGE:**
 
 <pre>
 docker run -d -p 8888 pcnetzwerke/apache2:latest
