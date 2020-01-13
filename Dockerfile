@@ -14,3 +14,12 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN lsb_release -a
+
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data
+
+#COPY content.html /var/www/html/
+
+EXPOSE 80
+
+CMD ["apachectl", "-D", "FOREGROUND"]
