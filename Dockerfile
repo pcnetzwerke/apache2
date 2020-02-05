@@ -17,6 +17,6 @@ RUN lsb_release -a
 
 COPY content.html /var/www/html/
 
-EXPOSE 80
+EXPOSE 80/tcp
 
 CMD ["apachectl", "-D", "FOREGROUND"]
