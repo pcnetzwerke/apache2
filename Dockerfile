@@ -11,6 +11,7 @@ RUN apt-get update \
   lsb-core \
   lsb-release  \
   apache2 \
+  && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
 RUN lsb_release -a
